@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Dice Roll</title>
@@ -10,11 +11,11 @@
     <div><a href="/dice/2/10">2d10</a></div>
     <div><a href="/dice/1/20">1d20</a></div>
     <div><a href="/dice/5/4">4d5</a></div>
-    <div><a href="/dice/2/20">2d20</a></div>
   </div>
 
-  <h1>2d6</h1>
-
-  <p><%= @outcome %></p>
+    <!-- This is the part that is not the same across all actions-->
+	
+    <%= yield %>
+    
 </body>
 </html>
