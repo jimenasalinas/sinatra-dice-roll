@@ -1,5 +1,9 @@
 <h1>1d20</h1>
 
-  <p><%= @outcome %></p>
-</body>
-</html>
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+</ul>
